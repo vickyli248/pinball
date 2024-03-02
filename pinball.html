@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Screenshot Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="screenshotArea">
+            <img src="benmo.jpeg" class="benmo"/>
+        </div>
+
+        <div id="savedArea">
+            <p>here are your pins</p>
+        </div>
+    </div>
+
+    <div id="selectionBox">
+      <img src="pin.png" class="pin-icon"/>
+      <div id="inputArea" style="display: none;">
+          <button id="cancelBtn">cancel</button>    
+          <input type="text" id="inputField" placeholder="Write something down">
+          <button id="captureBtn">✔</button>    
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="drag.js"></script>
+</body>
+</html>
